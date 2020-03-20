@@ -12,42 +12,100 @@
     <title id="logo">ChiragSales</title>
   </head>
   <body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Notifications</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Bootstrap tables -->
+ <table class="table table-striped text-center">
+  <thead>
+    <tr>
+      
+      <th scope="col">#</th>
+      <th scope="col">Available Sizes</th>
+      <th scope="col">Available Colours</th>
+      <th scope="col">Available Brands</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td><button type="button" class="btn  btn-dark">25</button></td>
+      <td><button type="button" class="btn  btn-warning">Yellow</button></td>
+      <td><button type="button" class="btn  btn-outline-warning"><img src="img/clothbrand1.jpg" alt="" class="img-fluid"></button></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td><button type="button" class="btn btn-centre btn-dark">27</button></td>
+      <td><button type="button" class="btn btn-centre btn-danger">Red</button></td>
+      <td><button type="button" class="btn  btn-outline-danger"><img src="img/clothbrand2.png" alt="" class="img-fluid"></button></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td><button type="button" class="btn btn-dark">32</button></td>
+      <td><button type="button" class="btn btn-success">Green</button></td>
+      <td><button type="button" class="btn  btn-outline-success"><img src="img/clothbrand3.png" alt="" class="img-fluid"></button></td>
+    </tr>
+  </tbody>
+</table>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Clear All</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--Navigation Bar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" id="logo" href="#">ChiragSales</a>
+ 
+<!-- New nav -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <a class="navbar-brand text-danger font-weight-bold" id="logo" href="#">ChiragSales</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Login</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Clothes
-        </a>
-       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="electronics.html">Electronics</a>
-           <div class="dropdown-divider"></div>
-           <a class="dropdown-item" href="clothing.html">Clothes</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="furniture.html">Furniture</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"></a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
+  
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item active">
+      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Login</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Clothes
+      </a>
+       <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+        <a class="dropdown-item " href="electronics.html">Electronics</a>
+         <div class="dropdown-divider"></div>
+         <a class="dropdown-item active" href="clothing.html">Clothes</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="furniture.html">Furniture</a>
+      </div>
+    </li>
+    <li class="nav-item "> 
+      <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">
+        <button type="button" class="btn btn-danger">
+          Notification <span class="badge badge-light">4</span>
+          <span class="sr-only">unread messages</span>
+        </button>
+      </a>
+    </li>
+  </ul>
+  <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</div>
 </nav>
 
 
@@ -89,6 +147,74 @@
   </a>
 </div>
 
+ <div class="container marketing">
+
+  <!-- Three columns of text below the carousel -->
+  <!-- START THE FEATURETTES -->
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <button class="btn btn-primary" data-target="#exampleModal" data-toggle="modal">See all buying Option</button>
+      <div class="progress mt-2">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+      </div>
+  </div>
+    <div class="col-md-5">
+      <img src="img/gingham.jpg" alt="">
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <button class="btn btn-primary" data-target="#exampleModal" data-toggle="modal">See all buying Option</button>
+      <div class="progress mt-2">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+      </div>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <img src="img/baytsuit.jpg" alt="">
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <button class="btn btn-primary" data-target="#exampleModal" data-toggle="modal">See all buying Option</button>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <img src="img/babasuit.jpg" alt="">
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <!-- /END THE FEATURETTES -->
+  
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </nav>
+</div><!-- /.container -->
+</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
